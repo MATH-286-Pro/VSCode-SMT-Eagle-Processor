@@ -28,7 +28,7 @@ with open(input_file, 'r') as file:
                 package = parts[2]
                 # 提取位置和方向
                 position = f"({parts[-4]} {parts[-3]})"
-                orientation = parts[-1]
+                orientation = parts[-1][1:]  # 移除R字符
                 data.append([part, value, package, position, orientation])
 
 # 写入CSV文件
