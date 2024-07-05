@@ -50,7 +50,7 @@ with open(input_file, 'r') as file:
 with open(output_file_bom, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     # 写入标题行 
-    writer.writerow(['Value', 'Designator', 'Footprint'])   # 'Value', 'Designator(位号)', 'Footprint(封装)'
+    writer.writerow(['Comment', 'Designator', 'Footprint'])   # 'Value', 'Designator(位号)', 'Footprint(封装)'
     for row in bom_data:
         writer.writerow(row)
 
