@@ -15,8 +15,11 @@ data = []
 with open(input_file, 'r') as file:
     lines = file.readlines()
     for line in lines:
-        # 忽略空行和标题行
-        if line.strip() and not line.startswith('Part'):
+        # 忽略空行、标题行和包含特定关键字的行
+        if line.strip() and not (line.startswith('Part') or 
+                                 line.startswith('Exported') or 
+                                 line.startswith('EAGLE Version') or 
+                                 line.startswith('Assembly variant')):
             parts = line.split()
             # 确保行中有足够的元素
             if len(parts) >= 6:
