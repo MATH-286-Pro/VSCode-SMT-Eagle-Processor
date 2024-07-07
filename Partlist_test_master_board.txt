@@ -1,0 +1,72 @@
+Partlist
+
+Exported from esp32_master_board.brd at 2024/7/5 20:37
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value            Package                   Library                Position (mm)         Orientation
+
+C1       22n              0402                      resistor               (24.13 16.35125)      R180
+C2       470p             0402                      resistor               (35.2425 5.23875)     R0
+C3       1u LOW ESR       0402                      resistor               (35.2425 6.35)        R0
+C4       100n             0402                      resistor               (39.52875 7.9375)     R0
+C5       100n             0402                      resistor               (24.13 17.4625)       R180
+C6       100n             0402                      resistor               (27.6225 15.24)       R0
+C7       100n             0402                      resistor               (29.1142 17.5792)     R0
+C8       100n             0402                      resistor               (39.37 14.76375)      R0
+C9       100n             0402                      resistor               (62.5475 9.36625)     R0
+C10      22u              C0805                     rcl                    (60.48375 6.0325)     R180
+C11      22u              C0805                     rcl                    (42.8625 31.90875)    R270
+C12      22u              C0805                     rcl                    (45.56125 31.90875)   R270
+C13      2.2u             C1210                     resistor               (44.4373 28.11145)    R180
+C14      1u               0402                      resistor               (35.00755 24.58085)   R270
+C15      3.3n             0402                      resistor               (41.11625 24.28875)   R90
+D1       RED              CHIPLED_0603              led                    (61.9125 14.605)      R270
+D2       GREEN            CHIPLED_0603              led                    (61.9125 16.03375)    R270
+IC1      SN74HC138PW      SOP65P640X120-16N         SamacSys_Parts         (28.8925 20.955)      R180
+IC2      MAX17502EATB+T   SON50P200X300X80-11N      MAX17502EATB+T         (38.25875 24.60625)   R0
+IC3      WS2812B          WS2812B                   WS2812B                (50.64125 11.43)      R90
+IC4      WS2812B          WS2812B                   WS2812B                (32.42875 17.58375)   MR90
+L        0                0402                      resistor               (30.1625 14.76375)    R270
+L1       15uH             LPS6235                   LPS6235-153MRB         (37.30625 30.95625)   R90
+POWER    DF13-2P-1.25DSA  DF13-2P-1.25DSA           con-hirose-df13        (49.53 30.1625)       R180
+PROG     DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (56.1975 30.1625)     R180
+R1       10               0402                      resistor               (39.37 5.3975)        R180
+R2       10               0402                      resistor               (39.37 6.6675)        R180
+R3       10               0402                      resistor               (39.21125 9.2075)     R180
+R4       10               0402                      resistor               (39.37 10.4775)       R180
+R5       4.7k             0402                      resistor               (39.37 13.6525)       R0
+R6       33               0402                      resistor               (33.02 5.3975)        R90
+R7       12.1k            0402                      resistor               (27.78125 8.5725)     R0
+R8       330              0402                      resistor               (24.13 8.73125)       R0
+R9       330              0402                      resistor               (24.13 7.46125)       R0
+R10      49.9             0402                      resistor               (24.13 13.335)        R0
+R11      49.9             0402                      resistor               (24.13 15.24)         R0
+R12      49.9             0402                      resistor               (24.13 10.00125)      R0
+R13      49.9             0402                      resistor               (24.13 12.065)        R0
+R14      330              0402                      resistor               (57.30875 9.2075)     R270
+R15      4.7k             0402                      resistor               (62.5475 8.09625)     R0
+R16      4.7k             0402                      resistor               (39.37 12.3825)       R0
+R17      1.5k             0402                      resistor               (55.72125 20.16125)   R0
+R18      330              0402                      resistor               (56.8325 18.89125)    R0
+R19      4.7k             0402                      resistor               (58.7375 9.2075)      R270
+R20      10               0402                      resistor               (40.9575 15.24)       MR225
+R21      10               0402                      resistor               (41.91 16.1925)       MR225
+R22      4.7k             0402                      resistor               (55.88 8.5725)        R270
+SPI_0    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (4.6863 28.2829)      R90
+SPI_1    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (8.47725 28.2829)     R90
+SPI_2    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (12.2682 28.2829)     R90
+SPI_3    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (16.05915 28.2829)    R90
+SPI_4    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (19.8501 28.2829)     R90
+SPI_5    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (23.64105 28.2829)    R90
+SPI_6    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (27.432 28.2829)      R90
+SPI_7    DF13-5P-1.25DSA  DF13-5P-1.25DSA           con-hirose-df13        (31.22295 28.2829)    R90
+SW1      B3U-1000P-2P-SMD SW2-2.6-3.0X2.5X1.2+0.4MM OPL_Switch             (61.43625 11.43)      R180
+U$1      ESP32-WROOM      ESP32-WROOM               ESP32                  (46.355 7.3025)       MR90
+U$2      LAN8720          QFN24                     microchip-smsc-lan8720 (33.02 10.16)         R90
+U$3      HR911105A        HANRUN_HR911105A          HR911105A_bis          (11.1125 14.2875)     R90
+U$4      DF13-6P-1.25DSA  DF13-6P-1.25DSA           con-hirose-df13        (53.34 2.8575)        R0
+U$5      DF13-3P-1.25DSA  DF13-3P-1.25DSA           con-hirose-df13        (38.4175 2.8575)      R0
+U$6      DF13-4P-1.25DSA  DF13-4P-1.25DSA           con-hirose-df13        (44.92625 2.8575)     R0

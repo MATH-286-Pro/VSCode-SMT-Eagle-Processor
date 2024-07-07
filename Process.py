@@ -10,8 +10,13 @@ os.makedirs(smt_folder, exist_ok=True)
 
 # 输入文件和输出文件的相对路径
 input_file = os.path.join(current_dir, 'Partlist_test.txt')
-output_file_bom = os.path.join(smt_folder, 'Partlist_BOM.csv')
-output_file_pos = os.path.join(smt_folder, 'Partlist_Positions.csv')
+output_file_bom = os.path.join(smt_folder, 'Micro_Driver_BOM.csv')
+output_file_pos = os.path.join(smt_folder, 'Micro_Driver_POS.csv')
+
+# Master Board 文件生成
+# input_file = os.path.join(current_dir, 'Partlist_test_master_board.txt')
+# output_file_bom = os.path.join(smt_folder, 'Partlist_BOM_master_board.csv')
+# output_file_pos = os.path.join(smt_folder, 'Partlist_Positions_master_board.csv')
 
 # 初始化数据列表
 bom_data = []
@@ -37,14 +42,21 @@ with open(input_file, 'r') as file:
                 position = parts[-3:-1]  # 提取位置坐标
                 x = position[0].strip('(')
                 y = position[1].strip(')')
-                orientation = parts[-1][1:]  # 移除R字符
+
+                rotation = parts[-1]  # 获取原始的rotation列
+                # orientation = parts[-1][1:]  # 移除R字符
+                orientation = ''.join(filter(str.isdigit, rotation))  # 取出数字作为orientation
+                
+                # 判断Layer列
+                layer = 'T' if rotation.startswith('R') else 'B'
+
                 
                 # 添加到BOM数据
                 bom_data.append([value, designator, package])
                 
                 # 添加到位置信息数据
-                # pos_data.append([part, f"{x}mm", f"{y}mm", 'T', orientation]) #添加mm单位版本
-                pos_data.append([designator, f"{x}", f"{y}", 'T', orientation])
+                pos_data.append([designator, f"{x}mm", f"{y}mm", layer, orientation]) #添加mm单位版本
+                # pos_data.append([designator, f"{x}", f"{y}", 'T', orientation])
 
 # 写入BOM CSV文件
 with open(output_file_bom, 'w', newline='') as csvfile:
